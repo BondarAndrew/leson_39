@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 100vh;
+}
+
+.button {
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 15px;
+  background-color: #f7941e;
+  text-decoration: none;
+  border-radius: 5px;
+  animation-name: button;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.photo {
+  height: 300px;
+  object-fit: cover;
+  background-position: center;
+  border-radius: 5555px;
+  transition-duration: 0.5s;
+}
+
+.img {
+  display: inline;
+}
+
+.img:hover .photo {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+@keyframes button {
+  0% {
+    margin-left: 10px;
+    background-color: aqua;
+  }
+
+  20% {
+    margin-left: 30px;
+    background-color: black;
+  }
+
+  40% {
+    margin-left: 40px;
+    background-color: pink;
+  }
+
+  60% {
+    margin-left: 10px;
+    background-color: aqua;
+  }
+
+  80% {
+    margin-left: 30px;
+    background-color: black;
+  }
+
+  100% {
+    margin-left: 10px;
+    background-color: pink;
+  }
+}
